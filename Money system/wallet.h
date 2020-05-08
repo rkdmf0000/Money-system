@@ -18,5 +18,9 @@ public:
 	void add_a_money(MONEY_TYPE,unsigned int);
 	void remove_a_money(MONEY_TYPE);
 	void remove_a_money(MONEY_TYPE,unsigned int);
+
+	void operator+() {
+
+	}
 };
 

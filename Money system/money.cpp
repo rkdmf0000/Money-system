@@ -1,5 +1,4 @@
 #include "money.h"
-
 #include <stdio.h>
 #include <iostream>
 MONEY_BUKKET::MONEY_BUKKET(void) {
@@ -18,23 +17,17 @@ const MONEY_TYPE* MONEY_BUKKET::get_collector() {
 }
 
 void MONEY_BUKKET::operator += (const MONEY_TYPE type) {	
-	
-	const UINT l = this->get_length();
+	const UINT l = get_length();
 	const UINT up = l + 1;
-	MONEY_TYPE* dump = new MONEY_TYPE[l];
-	dump = this->collector;		
+	MONEY_TYPE* dump;
+	dump = new MONEY_TYPE[up+10];
+	for (int i = 0; i < (int)l; i++) dump[i] = collector[i];
+	
+	delete[] collector;
+	collector = dump;
+	collector[l] = type;
+	length = length + 1;
 
-	std::cout << 1 << ": " << this->collector << std::endl;
-	delete[] this->collector;		
-	this->collector = new MONEY_TYPE[up];
-	std::cout << 2 << ": " << this->collector << std::endl;
-
-	this->collector = dump;
-	delete[] dump;
-	//this->collector[up] = type;										
-	this->length = up;
-	std::cout << 3 << ": " << this->collector << std::endl;
-	printf("Current Stack : %d\n", this->length);
 };
 void MONEY_BUKKET::operator-=(const MONEY_TYPE type) {
 

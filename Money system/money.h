@@ -6,7 +6,7 @@
 
 /*
 *	TITIE	: 돈의 종류 / MONEY_TYPE
-*	DESC	: 돈의 가치와 종류를 설정하는 곳
+*	DESC	: 돈의 가치와 종류를 설정함
 */
 const enum class MONEY_TYPE : unsigned int{
 	CENT_10 = 10,
@@ -29,10 +29,13 @@ class MONEY_BUKKET {
 public:
 	MONEY_BUKKET(void);
 	~MONEY_BUKKET(void);
+
 	void operator += (const MONEY_TYPE);
 	void operator -= (const MONEY_TYPE);
+
 	const UINT get_length();
 	const MONEY_TYPE* get_collector();
+
 	void print_collector();
 
 private:

@@ -147,6 +147,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DNARRCLASS.cpp" />
     <ClCompile Include="human.cpp" />
     <ClCompile Include="Money system.cpp" />
     <ClCompile Include="money.cpp" />
@@ -154,6 +155,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="common_defination.h" />
+    <ClInclude Include="DNARRCLASS.h" />
     <ClInclude Include="human.h" />
     <ClInclude Include="money-relationship.h" />
     <ClInclude Include="money.h" />

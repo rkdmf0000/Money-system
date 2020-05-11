@@ -1,7 +1,3 @@
-#define __H_HUMAN__
-#define __H_WALLET__
-#include "common_defination.h"
-#include "money-relationship.h"
 
 class human
 {

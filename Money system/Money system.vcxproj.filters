@@ -18,37 +18,5 @@
     <ClCompile Include="Money system.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="wallet.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="money.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="human.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DNARRCLASS.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="wallet.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="money.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="human.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="common_defination.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="money-relationship.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DNARRCLASS.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
